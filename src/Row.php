@@ -41,7 +41,7 @@ abstract class Row implements IteratorAggregate, JsonSerializable
 
     protected $cols = [];
 
-    final public function __construct(array $cols = [])
+    public function __construct(array $cols = [])
     {
         $this->init = $this->cols;
         foreach ($cols as $col => $val) {
